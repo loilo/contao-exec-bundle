@@ -9,4 +9,4 @@ install:
   - composer install
 
 script:
-  - vendor/bin/phpcs --standard=psr2 src test/ -n
+  - vendor/bin/phpcs --standard=psr2 src -n

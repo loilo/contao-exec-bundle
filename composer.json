@@ -1,0 +1,29 @@
+{
+    "name": "loilo/contao-exec-bundle",
+    "description": "Execute Contao-related PHP code directly from the console",
+    "type": "contao-bundle",
+    "require": {
+        "php": ">= 7.1",
+        "psy/psysh": "0.7.*|0.8.*|0.9.*",
+        "contao/core-bundle": "^4.3",
+        "loilo/lowlight": "^1.0"
+    },
+    "suggest": {
+        "loilo/contao-illuminate-database-bundle": "Enables easy database querying and model manipulation"
+    },
+    "autoload": {
+        "psr-4": {
+            "Loilo\\ContaoExecBundle\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Reuschel",
+            "email": "florian@loilo.de"
+        }
+    ],
+    "extra": {
+        "contao-manager-plugin": "Loilo\\ContaoExecBundle\\ContaoManager\\Plugin"
+    }
+}

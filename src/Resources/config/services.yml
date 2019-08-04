@@ -1,0 +1,15 @@
+services:
+    _defaults:
+        autoconfigure: true
+    loilo_contao_exec.repl_command:
+        class: Loilo\ContaoExecBundle\Command\ReplCommand
+        arguments:
+            - "%kernel.project_dir%"
+            - "@contao.framework"
+        public: false
+    loilo_contao_exec.eval_command:
+        class: Loilo\ContaoExecBundle\Command\EvalCommand
+        arguments:
+            - "%kernel.project_dir%"
+            - "@contao.framework"
+        public: false

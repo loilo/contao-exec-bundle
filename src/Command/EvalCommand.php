@@ -104,7 +104,7 @@ EOT
                 case 'export':
                     $result = var_export($result, true);
                     if ($shouldHighlight) {
-                        $output->writeln($ll->highlight('php', $result));
+                        $output->writeln($ll->highlight('php', $result)->value);
                     } else {
                         $output->writeln($result);
                     }
@@ -117,7 +117,7 @@ EOT
                     );
 
                     if ($shouldHighlight) {
-                        $output->writeln($ll->highlight('json', $result));
+                        $output->writeln($ll->highlight('json', $result)->value);
                     } else {
                         $output->writeln($result);
                     }

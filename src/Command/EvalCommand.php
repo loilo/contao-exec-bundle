@@ -80,6 +80,7 @@ EOT
         error_reporting($this->errorReportingLevel);
 
         $shell = new Shell($config);
+        $shell->setOutput($output);
         $this->loadDatabaseHelper($shell);
 
         // Evaluate program

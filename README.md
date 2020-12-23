@@ -1,5 +1,5 @@
 # Contao Exec
-[![Test status on Travis](https://badgen.net/travis/loilo/contao-exec-bundle?label=tests&icon=travis)](https://travis-ci.org/loilo/contao-exec-bundle)
+[![Tests](https://badgen.net/github/checks/loilo/contao-exec-bundle/master)](https://github.com/loilo/contao-exec-bundle/actions)
 [![Version on packagist.org](https://badgen.net/packagist/v/loilo/contao-exec-bundle)](https://packagist.org/packages/loilo/contao-exec-bundle)
 
 This package allows to execute PHP code in the context of a Contao application, directly from the command line.
